@@ -20,10 +20,12 @@
 	</div>
 </article>
 
-{% set ctaContent = primaryCTA %}
-{% include "partials/cta.html" %}
+{%- set ctaContent = primaryCTA %}
+{%- include "partials/cta.html" %}
 
-{% set ctaContent = cta %}
+{% include "partials/featured-work.html" %}
+
+{%- set ctaContent = cta %}
 {% include "partials/cta.html" %}
 
 {% endblock %}
